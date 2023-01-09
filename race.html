@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>race form</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+
+
+    <form action="">
+        <aside>
+            <p>
+                Are you a race director? Endurance event planner? Or just want to host a local 5k? Use our customizable
+                Race
+                Registration Form Template for a speedy way to sign up participants and collect race fees. Embed this
+                form
+                into
+                your event website, send it out in email, or post it to social channels to collect and post important
+                participant information-no sweat!
+            </p>
+        </aside>
+        <label for="fname">First Name</label>
+        <input type="text" name="q" id="fname" class="ip" required>
+        <label for="lname">Last Name</label>
+        <input type="text" name="q" id="lname" class="ip" required>
+        <h3>select a race:</h3>
+        <div class="bttn">
+
+            <input type="radio" name="rd" id="1" value="fr">
+            <label for="1">Fun Run 5k</label>
+        </div>
+        <div class="bttn">
+
+            <input type="radio" name="rd" id="2" value="hm">
+            <label for="2">half marathon</label>
+        </div>
+        <div class="bttn">
+
+            <input type="radio" name="rd" id="3" value="fm">
+            <label for="3">full marathon</label>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="ip" required>
+            <label for="45">Password</label>
+            <input type="password" name="psswrd" id="45" minlength="6" maxlength="10" class="ip" required>
+        </div>
+
+        <label for="age">Select Age Group</label>
+        <select name="x" id="age">
+            <option value="u18">under 18</option>
+            <option value="u30">18-30</option>
+            <option value="u50">30-50</option>
+            <option value="a50">50 and above</option>
+        </select>
+        <br>
+
+        <button type="reset">Reset</button>
+        <button>Register</button>
+    </form>
+
+</body>
+
+</html>

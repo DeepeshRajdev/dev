@@ -1,0 +1,68 @@
+h1 {
+    color: rgb(245, 228, 220);
+    text-align: center;
+    font-family: serif;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-size: 40px;
+
+
+}
+
+body {
+    background-color: #AFAAE4;
+}
+
+button {
+    color: rgb(192, 235, 244);
+    background-color: #270ab5;
+}
+
+button:hover {
+    background-color: rgb(137, 5, 113);
+}
+
+button:active {
+    background-color: rgb(254, 125, 108);
+}
+
+input[type="text"] {
+    color: #4b0172;
+    margin: 3px;
+}
+
+input[type="email"] {
+    color: #4b0172;
+    margin: 3px;
+}
+
+input[type="password"] {
+    color: #4b0172;
+    margin: 3px;
+}
+
+.bttn {
+    background-color: blanchedalmond;
+    width: 150px;
+    border: 2px solid rgb(8, 2, 119);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.ip {
+    background-color: rgb(206, 251, 253);
+    width: 200px;
+}
+
+p {
+    text-align: center;
+    background-color: bisque;
+    width: 30em;
+    border-color: rgb(226, 167, 79);
+    border-width: 10px;
+    border-style: inset;
+    border-radius: 40px;
+    padding: 7px;
+    ;
+}
