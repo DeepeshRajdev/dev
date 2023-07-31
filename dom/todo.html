@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {  //load yhe DOM
+            document.querySelector('#submit').disabled = true;         // by default submit buttton is disabled
+            document.querySelector('#newtask').onkeyup = function () {
+                let newtask = document.querySelector('#newtask').value;
+                if (newtask.length > 0) document.querySelector('#submit').disabled = false;
+                else document.querySelector('#submit').disabled = true;
+            }
+
+            document.querySelector('form').onsubmit = function () {
+                let task = document.querySelector('#newtask').value;
+                let li = document.createElement('li'); // created li
+                li.innerHTML = task;                   //  li with new task
+                document.querySelector('ul').append(li);    // add the li in ul
+                document.querySelector('#newtask').value = '';
+                document.querySelector('#submit').disabled = true;
+                return false;   // do not submit the form
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>TO-DO LIST</h1>
+    <ul>
+
+    </ul>
+    <form>
+        <input type="text" id="newtask" placeholder="enter a task">
+        <button id="submit">submit</button>
+    </form>
+</body>
+
+</html>
