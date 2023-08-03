@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    height:500px;
+    width:500px;
+    border:1px solid black;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+.beta{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
