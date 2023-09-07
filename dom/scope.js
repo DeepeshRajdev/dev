@@ -8,5 +8,12 @@ function a(){
     }
 }
 var x=5;
-a();
+//a();
 // whenever an execution context is created ,its lexical envionment is also created equals to its local memory and parents lexical environment
+function d(){
+    return function y(){
+        console.log("DEEPESH");
+    }
+} 
+var ans=d();
+ans();

@@ -11,9 +11,6 @@ div {
     align-items: center;
     background-color: rgb(183, 255, 0);
     transition: all 3s ease-out;
-
-
-
 }
 
 div:hover {
