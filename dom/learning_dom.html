@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
+  <script>
+    document.querySelector("h1").setAttribute("class","title");
+    let button = document.querySelector(".change");
+    button.addEventListener("click",() => {
+    document.querySelector(".two").innerHTML = "Manipulated";
+    let tagg = document.querySelector(".one");
+    tagg.innerHTML = "is";
+    tagg.style.color="orange";
+    button.style.padding="5px";
+    button.style.color="purple";
+    document.querySelector(".myUl").style.display="block";
+    document.querySelector("h1").style.color="orange";
+    
+})
+document.querySelectorAll(".list")//returns a node list
+document.getElementsByClassName("list");//returns a HTML collection
+  </script>
+</head>
+<body>
+    <h1>DOM <span class="two">Manipulation</span></h1>
+    <p>Deepesh Rajdev <span class="one">was</span> here</p>
+    <button class="change">click me</button>
+    <h2>Contents</h2>
+    <ul class="myUl" style="display:none">
+        <li class="list">get element by id</li>
+        <li class="list">get element by class name</li>
+        <li class="list"> query selector</li>
+    </ul>
+    
+</body>
+</html>
